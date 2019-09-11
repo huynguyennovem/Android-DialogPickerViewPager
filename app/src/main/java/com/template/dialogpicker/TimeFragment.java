@@ -1,28 +1,20 @@
 package com.template.dialogpicker;
 
-
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TimePicker;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Locale;
-
-
 public class TimeFragment extends Fragment {
 
     StringBuilder mTime;
-    CustomTimePicker timePicker;
+    TimePicker timePicker;
 
     public TimeFragment() {
         // Required empty public constructor

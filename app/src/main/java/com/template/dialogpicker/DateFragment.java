@@ -60,9 +60,11 @@ public class DateFragment extends Fragment {
         String format = "dd/MM/yyyy";
         final SimpleDateFormat formatter = new SimpleDateFormat(format, Locale.getDefault());
         mDate.append(formatter.format(date));
+        /*
         Calendar c2 = Calendar.getInstance();
         c2.set(2017, 0, 1);//Year,Mounth -1,Day
         datePicker.setMaxDate(c2.getTimeInMillis());
+        */
         datePicker.init(year, month, day, new DatePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(DatePicker datePicker, int y, int m, int dayOfMonth) {
